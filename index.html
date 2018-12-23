@@ -19,7 +19,7 @@
 <div class="wrapper row2">
   <div id="container" class="clear">
     <!-- content body -->
-    <section id="slider"><a href="#"><img src="images/demo/940x360.gif" alt=""></a></section>
+    <section id="slider"><a href="#"><img src="images/demo/head.png" alt=""></a></section>
     <!-- main content -->
     <div id="content">
       <!-- section 2 -->
@@ -56,19 +56,24 @@
             </article>
 			<article>
 				<br><br><h1>Main Core Sub-Systems</h1>
-				<p>This projects is a videogame 3D engine done by two people, Marc de Pedro and David Franco. It’s been created for educational purposes by videogame development students studying at CITM.</p>
-				<p>Here you can find a basic 3D engine, with the main functionalities done by ourselves, as well as a scripting system, also done by ourselves built on the engine of two other students. Thanks to Roger Tello and Pol Ferrando for offering us their engine. You can find their code <a href="https://github.com/rogerta97/TryHard_Engine">here</a>.</p>
+				<p><b>- Docking UI:</b> The UI is structured in docks, the user may change the layout by dragging each window.</p>
+				<p><b>- Gameobject + Component structure:</b> GameObjects follow a hierarchical structure, inheriting the transform matrix of their parent. To add functionality to this GameObjects, components are used. </p>
+				<p><b>- Resource Management: </b>The engine has a resource management window, where the user can manage different types of files. From here, the user can Rename, load, delete, edit various files.</p>
+				<p><b>- Scenes:</b> The engine allows the user to save “scenes”. Scenes are the group of game objects that are currently active at the moment of saving. When saving a scene, all the game objects will also save their respective components.</p>
+				<p><b>- Engine States: </b>The engine executes scripts in the scene when the play button is pressed, pressing the play button will save the state of the scene, so if something changes while running, when the stop button is pressed, the scene will go back to its previous state. Pausing the scene allows the user to step, which updates all the gameobjects and their components once.</p>
 			</article>
 			<article>
 				<br><br><h1>Scripting</h1>
-				<p>This projects is a videogame 3D engine done by two people, Marc de Pedro and David Franco. It’s been created for educational purposes by videogame development students studying at CITM.</p>
-				<p>Here you can find a basic 3D engine, with the main functionalities done by ourselves, as well as a scripting system, also done by ourselves built on the engine of two other students. Thanks to Roger Tello and Pol Ferrando for offering us their engine. You can find their code <a href="https://github.com/rogerta97/TryHard_Engine">here</a>.</p>
+				<p>The system we have implemented in the last assginment is <b>scripting.</b></p>
+				<p>We have chosen C# as the language for our scripts, because of its popularity and good performance towards gaiming purposes. A lot of commercials engines, such as Unity have C# as their choice too.</p>
+				<p>In order to implement the scripting system we are using Mono, a library that allows to "translate" C# code into C++ and viceversa. To do that, we have ported our own functions to C#, so scripts can read them.</p>
+				<p>Finally, we have implemented a text editor that allows to open and edit scripts freely without having to exit or close the 3D engine</p>
+				<img src="images/demo/gif1.gif" alt="">
+				<img src="images/demo/gif2.gif" alt="">			
 			</article>
 			<br><br><h1>Video Demo</h1><br>
 			<video width="640" height="360" controls>
-				<source src="movie.mp4" type="video/mp4">
-				<source src="movie.ogg" type="video/ogg">
-				Your browser does not support the video tag.
+				<source src="images/demo/video.mp4" type="video/mp4">
 			</video>
 			<article>
 				<br><br><h1>License</h1>
